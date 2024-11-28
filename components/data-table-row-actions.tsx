@@ -1,7 +1,7 @@
 "use client";
 
 import { Row } from "@tanstack/react-table";
-import { taskSchema } from "@/lib/schema";
+import { taskSchema } from "@/db/schema";
 import EditForm from "./edit-form";
 
 interface DataTableRowActionsProps<TData> {

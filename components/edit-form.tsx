@@ -35,10 +35,10 @@ import {
 
 import { cn } from "@/lib/utils";
 import { Pencil } from "lucide-react";
-import { taskSchema } from "@/lib/schema";
+import { taskSchema } from "@/db/schema";
 import { labels, priorities, statuses } from "@/lib/data";
 import { Input } from "./ui/input";
-import { UpdateTask } from "@/lib/actions";
+import { UpdateTask } from "@/server/actions";
 
 type Task = z.infer<typeof taskSchema>;
 

@@ -1,8 +1,8 @@
 "use server";
 
 import { z } from "zod";
-import { taskSchema } from "./schema";
-import { db } from "./db";
+import { taskSchema } from "@/db/schema";
+import { db } from "@/db/db";
 import { revalidatePath } from "next/cache";
 
 export const CreateTask = async (values: z.infer<typeof taskSchema>) => {

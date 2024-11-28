@@ -1,7 +1,7 @@
 import { columns } from "@/components/columns";
 import { DataTable } from "@/components/data-table";
-import { db } from "@/lib/db";
-import { taskSchema } from "@/lib/schema";
+import { db } from "@/db/db";
+import { taskSchema } from "@/db/schema";
 import { z } from "zod";
 
 type Task = z.infer<typeof taskSchema>;

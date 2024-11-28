@@ -35,10 +35,10 @@ import {
 
 import { cn } from "@/lib/utils";
 import { PlusCircle } from "lucide-react";
-import { taskSchema } from "@/lib/schema";
+import { taskSchema } from "@/db/schema";
 import { labels, priorities, statuses } from "@/lib/data";
 import { Input } from "./ui/input";
-import { CreateTask } from "@/lib/actions";
+import { CreateTask } from "@/server/actions";
 
 export default function CreateForm() {
   const [isPending, startTransition] = useTransition();
