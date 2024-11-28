@@ -32,13 +32,12 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-
 import { cn } from "@/lib/utils";
 import { Pencil } from "lucide-react";
 import { taskSchema } from "@/db/schema";
 import { labels, priorities, statuses } from "@/lib/data";
 import { Input } from "./ui/input";
-import { UpdateTask } from "@/server/actions";
+import { UpdateTask } from "@/api/task";
 
 type Task = z.infer<typeof taskSchema>;
 

@@ -38,7 +38,7 @@ import { PlusCircle } from "lucide-react";
 import { taskSchema } from "@/db/schema";
 import { labels, priorities, statuses } from "@/lib/data";
 import { Input } from "./ui/input";
-import { CreateTask } from "@/server/actions";
+import { CreateTask } from "@/api/task";
 
 export default function CreateForm() {
   const [isPending, startTransition] = useTransition();

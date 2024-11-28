@@ -7,8 +7,8 @@ import { Input } from "@/components/ui/input";
 import { priorities, statuses } from "@/lib/data";
 import { DataTableFacetedFilter } from "./data-table-faceted-filter";
 import CreateForm from "./create-form";
-import { DeleteTasks } from "@/server/actions";
 import { toast } from "sonner";
+import { DeleteTasks } from "@/api/task";
 
 interface DataTableToolbarProps<TData> {
   table: Table<TData>;
